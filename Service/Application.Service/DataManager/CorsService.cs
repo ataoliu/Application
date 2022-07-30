@@ -48,6 +48,15 @@ namespace Application.Service.DataManager
             var data = this.BaseRepository().FindList();
             return data;
         }
+        /// <summary>
+        /// 获取全部集合
+        /// </summary>
+        /// <returns>IEnumerable<MenuEntity> </returns>
+        public async Task< IEnumerable<CorsEntity>> GetListAsync()
+        {
+            var data = await this.BaseRepository().FindListAsync();
+            return data;
+        }
 
         /// <summary>
         /// 修改数据

@@ -10,8 +10,16 @@
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script>
     $(function () {
-        $.get("http://localhost:7181/api/Cors/GetPList", function (data) {
-
+        @*$.get("http://localhost:7181/api/Cors/GetList/GetListAsync", async function (data) {
+            console.log("data", data);
+        })*@
+        $.ajax({
+            url:"http://localhost:7181/api/Cors/GetList/GetListAsync",
+            type: "get",
+            async: true,
+            success: function (data) {
+                console.log("data", data);
+            }
         })
     })
 </script>

@@ -9,6 +9,7 @@ namespace Application.IService.DataManager
 		public CorsEntity GetEntity(string paramsJson);
 		public IEnumerable<CorsEntity> GetList(string paramsJson);
 		public IEnumerable<CorsEntity> GetList();
+		public Task <IEnumerable<CorsEntity>> GetListAsync();
 
 		public void SaveForm(CorsEntity entity);
 		public void SaveForm(List<CorsEntity> entities);

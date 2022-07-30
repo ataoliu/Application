@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <OutputPath>bin\Debug\net6.0\net6.0\net6.0\net6.0\net6.0\net6.0\net6.0\net6.0</OutputPath>
+    <OutputPath>bin\Debug\net6.0\net6.0\net6.0\net6.0\net6.0\net6.0\net6.0\net6.0\net6.0</OutputPath>
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>bin\Debug\net6.0\Application.Entity.xml</DocumentationFile>
     <NoWarn>1701;1702,8618</NoWarn>
