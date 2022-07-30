@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\net6.0\Application.Model.xml</DocumentationFile>
+    <NoWarn>1701;1702,8618</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="UserManager\" />
+    <None Remove="Pagination\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UserManager\" />
+    <Folder Include="Pagination\" />
+  </ItemGroup>
+</Project>

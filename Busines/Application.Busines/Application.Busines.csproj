@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Service\Application.IService\Application.IService.csproj" />
+    <ProjectReference Include="..\..\Service\Application.Service\Application.Service.csproj" />
+    <ProjectReference Include="..\..\Modules\Application.Model\Application.Model.csproj" />
+    <ProjectReference Include="..\..\Util\Application.Util\Application.Util.csproj" />
+    <ProjectReference Include="..\Application.IBusines\Application.IBusines.csproj" />
+  </ItemGroup>
+</Project>
